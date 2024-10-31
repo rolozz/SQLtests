@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  DB:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: SQL
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+    ports:
+      - "5432:5432"
